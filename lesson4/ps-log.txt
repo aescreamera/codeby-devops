@@ -1,0 +1,210 @@
+Script started on 2026-06-18 15:59:48+03:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="188" LINES="57"]
+[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ ps aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.3  22448 13972 ?        Ss   15:50   0:00 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    15:50   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    15:50   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/0:1-cgroup_free]
+root          11  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u16:0-ipv6_addrconf]
+root          13  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    15:50   0:00 [ksoftirqd/0]
+root          15  0.1  0.0      0     0 ?        I    15:50   0:00 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    15:50   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    15:50   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    15:50   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    15:50   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    15:50   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    15:50   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    15:50   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    15:50   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    15:50   0:00 [ksoftirqd/1]
+root          26  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/1:0H-kblockd]
+root          27  0.0  0.0      0     0 ?        S    15:50   0:00 [cpuhp/2]
+root          28  0.0  0.0      0     0 ?        S    15:50   0:00 [idle_inject/2]
+root          29  0.0  0.0      0     0 ?        S    15:50   0:00 [migration/2]
+root          30  0.0  0.0      0     0 ?        S    15:50   0:00 [ksoftirqd/2]
+root          33  0.0  0.0      0     0 ?        S    15:50   0:00 [cpuhp/3]
+root          34  0.0  0.0      0     0 ?        S    15:50   0:00 [idle_inject/3]
+root          35  0.0  0.0      0     0 ?        S    15:50   0:00 [migration/3]
+root          36  0.0  0.0      0     0 ?        S    15:50   0:00 [ksoftirqd/3]
+root          37  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/3:0-events]
+root          38  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/3:0H-events_highpri]
+root          39  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u17:0-events_unbound]
+root          40  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u18:0-events_unbound]
+root          41  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u19:0-kvfree_rcu_reclaim]
+root          42  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u20:0-events_unbound]
+root          43  0.0  0.0      0     0 ?        S    15:50   0:00 [kdevtmpfs]
+root          44  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-inet_frag_wq]
+root          45  0.0  0.0      0     0 ?        I    15:50   0:00 [rcu_tasks_kthread]
+root          46  0.0  0.0      0     0 ?        I    15:50   0:00 [rcu_tasks_rude_kthread]
+root          47  0.0  0.0      0     0 ?        I    15:50   0:00 [rcu_tasks_trace_kthread]
+root          48  0.0  0.0      0     0 ?        S    15:50   0:00 [kauditd]
+root          49  0.0  0.0      0     0 ?        S    15:50   0:00 [khungtaskd]
+root          50  0.0  0.0      0     0 ?        S    15:50   0:00 [oom_reaper]
+root          51  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u17:1-events_unbound]
+root          52  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u17:2-ext4-rsv-conversion]
+root          53  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-writeback]
+root          54  0.0  0.0      0     0 ?        S    15:50   0:00 [kcompactd0]
+root          55  0.0  0.0      0     0 ?        SN   15:50   0:00 [ksmd]
+root          56  0.0  0.0      0     0 ?        SN   15:50   0:00 [khugepaged]
+root          57  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-kblockd]
+root          58  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-blkcg_punt_bio]
+root          59  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-kintegrityd]
+root          60  0.0  0.0      0     0 ?        S    15:50   0:00 [irq/9-acpi]
+root          61  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/2:1-events]
+root          62  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/1:1-cgroup_free]
+root          63  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-tpm_dev_wq]
+root          64  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-ata_sff]
+root          65  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-md]
+root          66  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-md_bitmap]
+root          67  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-edac-poller]
+root          68  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-devfreq_wq]
+root          69  0.0  0.0      0     0 ?        S    15:50   0:00 [watchdogd]
+root          71  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-quota_events_unbound]
+root          72  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/2:1H-kblockd]
+root          73  0.0  0.0      0     0 ?        S    15:50   0:00 [kswapd0]
+root          74  0.0  0.0      0     0 ?        S    15:50   0:00 [ecryptfs-kthread]
+root          75  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-kthrotld]
+root          76  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-acpi_thermal_pm]
+root          77  0.0  0.0      0     0 ?        S    15:50   0:00 [scsi_eh_0]
+root          78  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-scsi_tmf_0]
+root          79  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u18:1-events_power_efficient]
+root          80  0.0  0.0      0     0 ?        S    15:50   0:00 [scsi_eh_1]
+root          82  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-scsi_tmf_1]
+root          86  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-mld]
+root          87  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/1:1H]
+root          88  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-ipv6_addrconf]
+root          89  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u16:1-ipv6_addrconf]
+root          90  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-kstrp]
+root          92  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/u21:0]
+root          93  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/u22:0]
+root          94  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/u23:0]
+root          95  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/u24:0]
+root          96  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/u25:0]
+root         100  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u20:1-flush-8:0]
+root         104  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u20:2-writeback]
+root         110  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-charger_manager]
+root         111  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/0:1H-kblockd]
+root         136  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/3:1H-kblockd]
+root         166  0.0  0.0      0     0 ?        S    15:50   0:00 [scsi_eh_2]
+root         167  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-scsi_tmf_2]
+root         170  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u19:2-kvfree_rcu_reclaim]
+root         172  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/2:2-cgroup_free]
+root         199  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-raid5wq]
+root         226  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/2:2H-kblockd]
+root         244  0.0  0.0      0     0 ?        S    15:50   0:00 [jbd2/sda3-8]
+root         245  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-ext4-rsv-conversion]
+root         297  0.0  0.4  67000 18124 ?        S<s  15:50   0:00 /usr/lib/systemd/systemd-journald
+root         329  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/1:3-events]
+root         349  0.0  0.0      0     0 ?        S    15:50   0:00 [irq/18-vmwgfx]
+root         350  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-ttm]
+root         355  0.0  0.2  30076  8132 ?        Ss   15:50   0:00 /usr/lib/systemd/systemd-udevd
+root         364  0.0  0.0      0     0 ?        S    15:50   0:00 [psimon]
+root         427  0.0  0.0      0     0 ?        I<   15:50   0:00 [kworker/R-iprt-VBoxWQueue]
+root         460  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/3:3-cgroup_free]
+root         489  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u17:3-events_unbound]
+systemd+     499  0.0  0.3  21480 13648 ?        Ss   15:50   0:00 /usr/lib/systemd/systemd-resolved
+root         610  0.0  0.2 313308  8144 ?        Ssl  15:50   0:00 /usr/libexec/accounts-daemon
+root         611  0.0  0.0   8300  2448 ?        Ss   15:50   0:00 /usr/sbin/anacron -d -q -s
+avahi        612  0.0  0.1   8620  4648 ?        Ss   15:50   0:00 avahi-daemon: running [changed-hostname.local]
+root         614  0.0  0.0   9436  3056 ?        Ss   15:50   0:00 /usr/sbin/cron -f -P
+message+     615  0.0  0.1  10896  6392 ?        Ss   15:50   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         620  0.0  0.1  82928  4200 ?        Ssl  15:50   0:00 /usr/sbin/irqbalance
+polkitd      634  0.0  0.2 384848 11448 ?        Ssl  15:50   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         636  0.0  0.1 313388  7564 ?        Ssl  15:50   0:00 /usr/libexec/power-profiles-daemon
+root         641  0.0  0.1 309736  6968 ?        Ssl  15:50   0:00 /usr/libexec/switcheroo-control
+root         643  0.0  0.2  18096  9284 ?        Ss   15:50   0:00 /usr/lib/systemd/systemd-logind
+root         645  0.0  0.3 258564 14520 ?        Ssl  15:50   0:00 /usr/bin/touchegg --daemon
+root         648  0.0  0.3 468996 13824 ?        Ssl  15:50   0:00 /usr/libexec/udisks2/udisksd
+avahi        661  0.0  0.0   8432  1644 ?        S    15:50   0:00 avahi-daemon: chroot helper
+syslog       692  0.0  0.1 222540  6360 ?        Ssl  15:50   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         701  0.0  0.4 336284 19752 ?        Ssl  15:50   0:00 /usr/sbin/NetworkManager --no-daemon
+root         703  0.0  0.1  17392  6512 ?        Ss   15:50   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root         742  0.0  0.3 392108 13228 ?        Ssl  15:50   0:00 /usr/sbin/ModemManager
+root         753  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u17:4-events_power_efficient]
+root         938  0.0  0.3  38416 12464 ?        Ss   15:50   0:00 /usr/sbin/cupsd -l
+root        1087  0.1  0.0      0     0 ?        I    15:50   0:00 [kworker/0:3-events]
+cups-br+    1093  0.0  0.5 268504 20644 ?        Ssl  15:50   0:00 /usr/sbin/cups-browsed
+root        1097  0.0  0.1 379940  7556 ?        Ssl  15:50   0:00 /usr/sbin/lightdm
+kernoops    1102  0.0  0.0  12752  2632 ?        Ss   15:50   0:00 /usr/sbin/kerneloops --test
+root        1108  0.1  0.0 289612  2912 ?        Sl   15:50   0:00 /usr/bin/VBoxDRMClient
+kernoops    1109  0.0  0.0  12752  2588 ?        Ss   15:50   0:00 /usr/sbin/kerneloops
+root        1111  0.0  0.0 295800  3964 ?        Sl   15:50   0:00 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root        1136  0.3  2.3 340452 95192 tty7     Ssl+ 15:50   0:01 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root        1143  0.0  0.0   8716  2040 tty1     Ss+  15:50   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root        1180  0.0  0.2 236048  9092 ?        Sl   15:50   0:00 lightdm --session-child 17 20
+root        1185  0.0  0.0      0     0 ?        S    15:50   0:00 [psimon]
+lightdm     1187  0.0  0.2  20484 11716 ?        Ss   15:50   0:00 /usr/lib/systemd/systemd --user
+lightdm     1188  0.0  0.0  23168  3908 ?        S    15:50   0:00 (sd-pam)
+lightdm     1200  0.0  0.3 113132 12404 ?        S<sl 15:50   0:00 /usr/bin/pipewire
+lightdm     1201  0.0  0.1  97748  6184 ?        Ssl  15:50   0:00 /usr/bin/pipewire -c filter-chain.conf
+lightdm     1203  0.0  0.4 406872 19136 ?        S<sl 15:50   0:00 /usr/bin/wireplumber
+lightdm     1204  0.0  0.2 109424 10836 ?        S<sl 15:50   0:00 /usr/bin/pipewire-pulse
+lightdm     1205  0.0  0.2 316504  9948 ?        Ssl  15:50   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/113/keyring
+lightdm     1210  0.0  0.1   9452  5304 ?        Ss   15:50   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+rtkit       1212  0.0  0.0  22948  3676 ?        SNsl 15:50   0:00 /usr/libexec/rtkit-daemon
+lightdm     1220  0.0  0.0   2808  1980 ?        Ss   15:50   0:00 /bin/sh /usr/lib/lightdm/lightdm-greeter-session /usr/sbin/slick-greeter
+lightdm     1221  0.3  1.4 792816 58536 ?        Sl   15:50   0:02 /usr/sbin/slick-greeter
+lightdm     1237  0.0  0.1 230116  6032 ?        Ssl  15:50   0:00 /usr/libexec/dconf-service
+lightdm     1259  0.0  0.2 383092  8116 ?        Ssl  15:50   0:00 /usr/libexec/at-spi-bus-launcher
+lightdm     1266  0.0  0.1   9304  5036 ?        S    15:50   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=u
+lightdm     1267  0.0  0.2 314172  8192 ?        Ssl  15:50   0:00 /usr/libexec/gvfsd
+lightdm     1273  0.0  0.1 459724  7420 ?        Sl   15:50   0:00 /usr/libexec/gvfsd-fuse /run/user/113/gvfs -f
+root        1282  0.0  0.2 316680  9236 ?        Ssl  15:50   0:00 /usr/libexec/upowerd
+root        1291  0.0  0.1  14712  7196 ?        S    15:50   0:00 lightdm --session-child 13 20
+lightdm     1293  0.0  0.1 236076  7812 ?        Sl   15:50   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+root        1302  0.0  0.2  12032  8384 ?        Ss   15:50   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root        1305  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u19:3-events_unbound]
+student     1310  0.0  0.2  20304 11524 ?        Ss   15:50   0:00 /usr/lib/systemd/systemd --user
+student     1311  0.0  0.0  23164  3924 ?        S    15:50   0:00 (sd-pam)
+student     1325  0.0  0.2 109208  8968 ?        Ssl  15:50   0:00 /usr/bin/pipewire
+student     1326  0.0  0.1  97748  6196 ?        Ssl  15:50   0:00 /usr/bin/pipewire -c filter-chain.conf
+student     1328  0.0  0.4 405056 16196 ?        Ssl  15:50   0:00 /usr/bin/wireplumber
+student     1329  0.0  0.2 109420 10860 ?        Ssl  15:50   0:00 /usr/bin/pipewire-pulse
+student     1335  0.0  0.1   9456  5176 ?        Ss   15:50   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        1378  0.0  0.0      0     0 ?        I    15:50   0:00 [kworker/u20:3-events_unbound]
+root        3369  0.0  0.2  16908 11372 ?        Ss   15:55   0:00 sshd: student [priv]
+root        3373  0.0  0.2  16912 11416 ?        Ss   15:55   0:00 sshd: student [priv]
+student     3381  0.5  0.2  17228  8276 ?        S    15:55   0:01 sshd: student@pts/0
+student     3382  0.0  0.1  11180  5528 pts/0    Ss   15:55   0:00 -bash
+student     3385  0.3  0.0   9952  3728 ?        Ss   15:55   0:00 bash -c while true; do sleep 1;head -v -n 8 /proc/meminfo; head -v -n 2 /proc/stat /proc/version /proc/uptime /proc/loada
+student     3402  0.0  0.1  17076  7508 ?        S    15:55   0:00 sshd: student@notty
+student     3403  0.0  0.0   2756  2200 ?        Ss   15:55   0:00 /usr/lib/openssh/sftp-server
+root        3424  0.0  0.0      0     0 ?        I    15:55   0:00 [kworker/u19:1-writeback]
+root        4033  0.0  0.0      0     0 ?        I    15:57   0:00 [kworker/u18:2-events_unbound]
+root        4117  0.0  0.0      0     0 ?        I    15:57   0:00 [kworker/1:0]
+student     4930  0.0  0.0   8316  2412 pts/0    S+   15:59   0:00 script ps-log.txt
+student     4931  0.6  0.1  11008  5352 pts/1    Ss   15:59   0:00 bash -i
+student     4942  0.0  0.0   8300  2176 ?        S    15:59   0:00 sleep 1
+student     4943  100  0.1  13500  4616 pts/1    R+   15:59   0:00 ps aux
+[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ ps -u $USER
+[?2004l    PID TTY          TIME CMD
+   1310 ?        00:00:00 systemd
+   1311 ?        00:00:00 (sd-pam)
+   1325 ?        00:00:00 pipewire
+   1326 ?        00:00:00 pipewire
+   1328 ?        00:00:00 wireplumber
+   1329 ?        00:00:00 pipewire-pulse
+   1335 ?        00:00:00 dbus-daemon
+   3381 ?        00:00:01 sshd
+   3382 pts/0    00:00:00 bash
+   3385 ?        00:00:00 bash
+   3402 ?        00:00:00 sshd
+   3403 ?        00:00:00 sftp-server
+   4930 pts/0    00:00:00 script
+   4931 pts/1    00:00:00 bash
+   4961 ?        00:00:00 sleep
+   4962 pts/1    00:00:00 ps
+[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ top -b -d 10 > /dev/null &
+[?2004l[1] 5042
+[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ kill 5042
+[?2004l[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ exit
+[?2004lexit
+
+Script done on 2026-06-18 16:00:10+03:00 [COMMAND_EXIT_CODE="0"]
