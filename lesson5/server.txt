@@ -1,0 +1,15 @@
+dev tun
+ifconfig 10.8.0.1 10.8.0.2
+secret /etc/openvpn/static.key
+port 1194
+proto udp
+push "redirect-gateway def1 bypass-dhcp"
+push "dhcp-option DNS 8.8.8.8"
+keepalive 10 120
+cipher AES-256-CBC
+user nobody
+group nogroup
+persist-key
+persist-tun
+status openvpn-status.log
+verb 3
