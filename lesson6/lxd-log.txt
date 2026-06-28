@@ -1,0 +1,163 @@
+Script started on 2026-06-24 17:02:02+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="141" LINES="34"]
+[?2004h]0;student@codeby-server: ~[01;32mstudent@codeby-server[00m:[01;34m~[00m$ sudo lxc launch ubuntu:jha[K[Kammy ubuntu-container
+[?2004l[sudo] password for student: *******       
+Launching ubuntu-container
+[?2004h]0;student@codeby-server: ~[01;32mstudent@codeby-server[00m:[01;34m~[00m$ sudo lxc list
+[?2004l+------------------+---------+----------------------+----------------------------------------------+-----------+-----------+
+|       NAME       |  STATE  |         IPV4         |                     IPV6                     |   TYPE    | SNAPSHOTS |
++------------------+---------+----------------------+----------------------------------------------+-----------+-----------+
+| ubuntu-container | RUNNING | 10.248.11.188 (eth0) | fd42:6cd:7233:4590:216:3eff:fe4d:3314 (eth0) | CONTAINER | 0         |
++------------------+---------+----------------------+----------------------------------------------+-----------+-----------+
+[?2004h]0;student@codeby-server: ~[01;32mstudent@codeby-server[00m:[01;34m~[00m$ sudo lxc exexc[K[Kc ubuntu-container -- /bin/bash
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# 
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# 
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# apt ipda[K[K[K[Kupdate[K[K[K[K[K[Kions[K[K[Knstall aap[K[Kpache2
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 15%Reading package lists... 15%Reading package lists... 23%Reading package lists... 23%Reading package lists... 41%Reading package lists... 41%Reading package lists... 53%Reading package lists... 53%Reading package lists... 63%Reading package lists... 63%Reading package lists... 70%Reading package lists... 70%Reading package lists... 88%Reading package lists... 88%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 14%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils bzip2 libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0 mailcap
+  mime-support ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser bzip2-doc
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils bzip2 libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0 mailcap
+  mime-support ssl-cert
+0 upgraded, 13 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2154 kB of archives.
+After this operation, 8560 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.04.2 [108 kB]
+[33m0% [1 libapr1 0 B/108 kB 0%][0m[33m                            6% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.04.2 [92.8 kB]
+[33m6% [2 libaprutil1 0 B/92.8 kB 0%][0m[33m                                 11% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-5ubuntu4.22.04.2 [11.3 kB]
+[33m11% [3 libaprutil1-dbd-sqlite3 1021 B/11.3 kB 9%][0m[33m                                                 12% [Waiting for headers][0m                         Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-ldap amd64 1.6.1-5ubuntu4.22.04.2 [9170 B]
+[33m12% [4 libaprutil1-ldap 167 B/9170 B 2%][0m[33m                                        14% [Waiting for headers][0m                         Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 liblua5.3-0 amd64 5.3.6-1build1 [140 kB]
+[33m14% [5 liblua5.3-0 1484 B/140 kB 1%][0m                                    Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-bin amd64 2.4.52-1ubuntu4.21 [1361 kB]
+[33m21% [6 apache2-bin 1535 B/1361 kB 0%][0m[33m                                     73% [Waiting for headers][0m                         Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-data all 2.4.52-1ubuntu4.21 [165 kB]
+[33m73% [7 apache2-data 3454 B/165 kB 2%][0m[33m                                     81% [Waiting for headers][0m                         Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-utils amd64 2.4.52-1ubuntu4.21 [89.3 kB]
+[33m81% [8 apache2-utils 8076 B/89.3 kB 9%][0m[33m                                       86% [Waiting for headers][0m                         Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 mailcap all 3.70+nmu1ubuntu1 [23.8 kB]
+[33m87% [9 mailcap 23.8 kB/23.8 kB 100%][0m[33m                                    88% [Waiting for headers][0m                         Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 mime-support all 3.66 [3696 B]
+[33m90% [Waiting for headers][0m                         Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2 amd64 2.4.52-1ubuntu4.21 [97.9 kB]
+[33m91% [11 apache2 20.1 kB/97.9 kB 21%][0m[33m                                    95% [Waiting for headers][0m                         Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]
+[33m96% [12 bzip2 23.1 kB/34.8 kB 66%][0m[33m                                  98% [Waiting for headers][0m                         Get:13 http://archive.ubuntu.com/ubuntu jammy/main amd64 ssl-cert all 1.1.2 [17.4 kB]
+[33m98% [13 ssl-cert 17.4 kB/17.4 kB 100%][0m[33m                                      100% [Working][0m              Fetched 2154 kB in 1s (2554 kB/s)
+Preconfiguring packages ...
+
+7[0;33r8[1ASelecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 34184 files and directories currently installed.)
+Preparing to unpack .../00-libapr1_1.7.0-8ubuntu0.22.04.2_amd64.deb ...
+7[34;0f[42m[30mProgress: [  0%][49m[39m [.......................................................................................................................] 87[34;0f[42m[30mProgress: [  2%][49m[39m [##.....................................................................................................................] 8Unpacking libapr1:amd64 (1.7.0-8ubuntu0.22.04.2) ...
+7[34;0f[42m[30mProgress: [  4%][49m[39m [####...................................................................................................................] 8Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../01-libaprutil1_1.6.1-5ubuntu4.22.04.2_amd64.deb ...
+7[34;0f[42m[30mProgress: [  6%][49m[39m [######.................................................................................................................] 8Unpacking libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.2) ...
+7[34;0f[42m[30mProgress: [  8%][49m[39m [########...............................................................................................................] 8Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../02-libaprutil1-dbd-sqlite3_1.6.1-5ubuntu4.22.04.2_amd64.deb ...
+7[34;0f[42m[30mProgress: [  9%][49m[39m [###########............................................................................................................] 8Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.2) ...
+7[34;0f[42m[30mProgress: [ 11%][49m[39m [#############..........................................................................................................] 8Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../03-libaprutil1-ldap_1.6.1-5ubuntu4.22.04.2_amd64.deb ...
+7[34;0f[42m[30mProgress: [ 13%][49m[39m [###############........................................................................................................] 8Unpacking libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.2) ...
+7[34;0f[42m[30mProgress: [ 15%][49m[39m [#################......................................................................................................] 8Selecting previously unselected package liblua5.3-0:amd64.
+Preparing to unpack .../04-liblua5.3-0_5.3.6-1build1_amd64.deb ...
+7[34;0f[42m[30mProgress: [ 17%][49m[39m [####################...................................................................................................] 8Unpacking liblua5.3-0:amd64 (5.3.6-1build1) ...
+7[34;0f[42m[30mProgress: [ 19%][49m[39m [######################.................................................................................................] 8Selecting previously unselected package apache2-bin.
+Preparing to unpack .../05-apache2-bin_2.4.52-1ubuntu4.21_amd64.deb ...
+7[34;0f[42m[30mProgress: [ 21%][49m[39m [########################...............................................................................................] 8Unpacking apache2-bin (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 23%][49m[39m [##########################.............................................................................................] 8Selecting previously unselected package apache2-data.
+Preparing to unpack .../06-apache2-data_2.4.52-1ubuntu4.21_all.deb ...
+7[34;0f[42m[30mProgress: [ 25%][49m[39m [#############################..........................................................................................] 8Unpacking apache2-data (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 26%][49m[39m [###############################........................................................................................] 8Selecting previously unselected package apache2-utils.
+Preparing to unpack .../07-apache2-utils_2.4.52-1ubuntu4.21_amd64.deb ...
+7[34;0f[42m[30mProgress: [ 28%][49m[39m [#################################......................................................................................] 8Unpacking apache2-utils (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 30%][49m[39m [###################################....................................................................................] 8Selecting previously unselected package mailcap.
+Preparing to unpack .../08-mailcap_3.70+nmu1ubuntu1_all.deb ...
+7[34;0f[42m[30mProgress: [ 32%][49m[39m [######################################.................................................................................] 8Unpacking mailcap (3.70+nmu1ubuntu1) ...
+7[34;0f[42m[30mProgress: [ 34%][49m[39m [########################################...............................................................................] 8Selecting previously unselected package mime-support.
+Preparing to unpack .../09-mime-support_3.66_all.deb ...
+7[34;0f[42m[30mProgress: [ 36%][49m[39m [##########################################.............................................................................] 8Unpacking mime-support (3.66) ...
+7[34;0f[42m[30mProgress: [ 38%][49m[39m [############################################...........................................................................] 8Selecting previously unselected package apache2.
+Preparing to unpack .../10-apache2_2.4.52-1ubuntu4.21_amd64.deb ...
+7[34;0f[42m[30mProgress: [ 40%][49m[39m [###############################################........................................................................] 8Unpacking apache2 (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 42%][49m[39m [#################################################......................................................................] 8Selecting previously unselected package bzip2.
+Preparing to unpack .../11-bzip2_1.0.8-5build1_amd64.deb ...
+7[34;0f[42m[30mProgress: [ 43%][49m[39m [###################################################....................................................................] 8Unpacking bzip2 (1.0.8-5build1) ...
+7[34;0f[42m[30mProgress: [ 45%][49m[39m [#####################################################..................................................................] 8Selecting previously unselected package ssl-cert.
+Preparing to unpack .../12-ssl-cert_1.1.2_all.deb ...
+7[34;0f[42m[30mProgress: [ 47%][49m[39m [########################################################...............................................................] 8Unpacking ssl-cert (1.1.2) ...
+7[34;0f[42m[30mProgress: [ 49%][49m[39m [##########################################################.............................................................] 8Setting up libapr1:amd64 (1.7.0-8ubuntu0.22.04.2) ...
+7[34;0f[42m[30mProgress: [ 51%][49m[39m [############################################################...........................................................] 87[34;0f[42m[30mProgress: [ 53%][49m[39m [##############################################################.........................................................] 8Setting up bzip2 (1.0.8-5build1) ...
+7[34;0f[42m[30mProgress: [ 55%][49m[39m [#################################################################......................................................] 87[34;0f[42m[30mProgress: [ 57%][49m[39m [###################################################################....................................................] 8Setting up ssl-cert (1.1.2) ...
+7[34;0f[42m[30mProgress: [ 58%][49m[39m [#####################################################################..................................................] 87[34;0f[42m[30mProgress: [ 60%][49m[39m [#######################################################################................................................] 8Setting up liblua5.3-0:amd64 (5.3.6-1build1) ...
+7[34;0f[42m[30mProgress: [ 62%][49m[39m [##########################################################################.............................................] 87[34;0f[42m[30mProgress: [ 64%][49m[39m [############################################################################...........................................] 8Setting up apache2-data (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 66%][49m[39m [##############################################################################.........................................] 87[34;0f[42m[30mProgress: [ 68%][49m[39m [################################################################################.......................................] 8Setting up mailcap (3.70+nmu1ubuntu1) ...
+7[34;0f[42m[30mProgress: [ 70%][49m[39m [###################################################################################....................................] 87[34;0f[42m[30mProgress: [ 72%][49m[39m [#####################################################################################..................................] 8Setting up libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.2) ...
+7[34;0f[42m[30mProgress: [ 74%][49m[39m [#######################################################################################................................] 87[34;0f[42m[30mProgress: [ 75%][49m[39m [#########################################################################################..............................] 8Setting up mime-support (3.66) ...
+7[34;0f[42m[30mProgress: [ 77%][49m[39m [############################################################################################...........................] 87[34;0f[42m[30mProgress: [ 79%][49m[39m [##############################################################################################.........................] 8Setting up libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.2) ...
+7[34;0f[42m[30mProgress: [ 81%][49m[39m [################################################################################################.......................] 87[34;0f[42m[30mProgress: [ 83%][49m[39m [##################################################################################################.....................] 8Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.2) ...
+7[34;0f[42m[30mProgress: [ 85%][49m[39m [#####################################################################################################..................] 87[34;0f[42m[30mProgress: [ 87%][49m[39m [#######################################################################################################................] 8Setting up apache2-utils (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 89%][49m[39m [#########################################################################################################..............] 87[34;0f[42m[30mProgress: [ 91%][49m[39m [###########################################################################################################............] 8Setting up apache2-bin (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 92%][49m[39m [##############################################################################################################.........] 87[34;0f[42m[30mProgress: [ 94%][49m[39m [################################################################################################################.......] 8Setting up apache2 (2.4.52-1ubuntu4.21) ...
+7[34;0f[42m[30mProgress: [ 96%][49m[39m [##################################################################################################################.....] 8Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+7[34;0f[42m[30mProgress: [ 98%][49m[39m [####################################################################################################################...] 8Processing triggers for ufw (0.36.1-4ubuntu0.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+
+7[0;34r8[1A[JScanning processes... [                                                                                                                     ]Scanning processes... [====                                                                                                                 ]Scanning processes... [========                                                                                                             ]Scanning processes... [============                                                                                                         ]Scanning processes... [================                                                                                                     ]Scanning processes... [====================                                                                                                 ]Scanning processes... [========================                                                                                             ]Scanning processes... [============================                                                                                         ]Scanning processes... [================================                                                                                     ]Scanning processes... [====================================                                                                                 ]Scanning processes... [========================================                                                                             ]Scanning processes... [============================================                                                                         ]Scanning processes... [================================================                                                                     ]Scanning processes... [====================================================                                                                 ]Scanning processes... [========================================================                                                             ]Scanning processes... [============================================================                                                         ]Scanning processes... [================================================================                                                     ]Scanning processes... [====================================================================                                                 ]Scanning processes... [========================================================================                                             ]Scanning processes... [============================================================================                                         ]Scanning processes... [================================================================================                                     ]Scanning processes... [====================================================================================                                 ]Scanning processes... [========================================================================================                             ]Scanning processes... [============================================================================================                         ]Scanning processes... [================================================================================================                     ]Scanning processes... [====================================================================================================                 ]Scanning processes... [========================================================================================================             ]Scanning processes... [============================================================================================================         ]Scanning processes... [================================================================================================================     ]Scanning processes... [=====================================================================================================================]Scanning processes...                                                                                                                        
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# 
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# 
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# 
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# systemctl start apache2
+[?2004l[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# ip a
+[?2004l1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+7: eth0@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:4d:33:14 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.248.11.188/24 metric 100 brd 10.248.11.255 scope global dynamic eth0
+       valid_lft 3535sec preferred_lft 3535sec
+    inet6 fd42:6cd:7233:4590:216:3eff:fe4d:3314/64 scope global mngtmpaddr noprefixroute 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::216:3eff:fe4d:3314/64 scope link 
+       valid_lft forever preferred_lft forever
+[?2004h]0;root@ubuntu-container: ~root@ubuntu-container:~# exit
+[?2004lexit
+[?2004h]0;student@codeby-server: ~[01;32mstudent@codeby-server[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-24 17:03:51+03:00 [COMMAND_EXIT_CODE="0"]
