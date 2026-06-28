@@ -1,0 +1,33 @@
+Script started on 2026-06-18 16:20:07+03:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="188" LINES="57"]
+[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ sudo systemctl raemon[K[K[K[K[K[Kdaemon-reload
+[?2004l[sudo] password for student: *******       
+[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ 
+[?2004l[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ 
+[?2004l[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ 
+[?2004l[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ sudo systemctl enable codeby-nginx
+[?2004l[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ sudo systemctl start s[Kcodeby-ns[Kginx
+[?2004l[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ sudo syts[K[Kstemctl status codeby-nginx
+[?2004l[?1h=[0;1;32m●[0m codeby-nginx.service - unit for codeby[m
+     Loaded: loaded (]8;;file://changed-hostname/etc/systemd/system/codeby-nginx.service/etc/systemd/system/codeby-nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Thu 2026-06-18 16:20:59 MSK; 9s ago[m
+    Process: 13932 ExecStartPre=/usr/sbin/nginx -t (code=exited, status=0/SUCCESS)[m
+    Process: 13933 ExecStart=/usr/sbin/nginx (code=exited, status=0/SUCCESS)[m
+   Main PID: 13935 (nginx)[m
+      Tasks: 5 (limit: 4587)[m
+     Memory: 3.9M (peak: 4.3M)[m
+        CPU: 33ms[m
+     CGroup: /system.slice/codeby-nginx.service[m
+             ├─[0;38;5;245m13935 "nginx: master process /usr/sbin/nginx"[0m[m
+             ├─[0;38;5;245m13936 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m13937 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m13938 "nginx: worker process"[0m[m
+             └─[0;38;5;245m13939 "nginx: worker process"[0m[m
+[m
+Jun 18 16:20:59 changed-hostname systemd[1]: Starting codeby-nginx.service - unit for codeby...[m
+Jun 18 16:20:59 changed-hostname nginx[13932]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok[m
+Jun 18 16:20:59 changed-hostname nginx[13932]: nginx: configuration file /etc/nginx/nginx.conf test is successful[m
+Jun 18 16:20:59 changed-hostname systemd[1]: Started codeby-nginx.service - unit for codeby.[m
+[K[?1l>[?2004h]0;student@changed-hostname: ~student@changed-hostname:~$ exit
+[?2004lexit
+
+Script done on 2026-06-18 16:21:17+03:00 [COMMAND_EXIT_CODE="0"]
