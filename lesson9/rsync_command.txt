@@ -1,0 +1,1 @@
+rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" "$BACKUP_DIR/" "$STORE_USER@$STORE_SERVER:$STORE_DIR"
