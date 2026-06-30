@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-24.04"
+  config.vm.box_check_update = false
+
+  DOMAIN_NAME = "dey.local"
+
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.network "private_network", ip: "172.17.177.2"
+    server.vm.provider "virtualbox" do |vb|
+      vb.gui = false
+      vb.memory = "1024"
+    end
+    
+    server.vm.provision "shell", path: "provision_server.sh", args: [DOMAIN_NAME]
+
+  end
+
+  config.vm.define "client" do |client|
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "172.17.177.3"
+    client.vm.provider "virtualbox" do |vb|
+      vb.gui = false
+      vb.memory = "1024"
+    end
+    
+    client.vm.provision "shell", path: "provision_client.sh", args: [DOMAIN_NAME]
+
+  end
+
+end
