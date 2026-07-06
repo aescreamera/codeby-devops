@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # config.vm.box = "bento/ubuntu-24.04"
+  # config.vm.box = "almalinux/9"
+
+  config.vm.box_check_update = false
+
+  config.vm.define "ubuntu" do |ubuntu|
+    ubuntu.vm.box = "bento/ubuntu-24.04"
+    ubuntu.vm.hostname = "ubuntu"
+    ubuntu.vm.network "public_network"
+    ubuntu.vm.provider "virtualbox" do |vb|
+      vb.gui = false
+      vb.memory = "1024"
+    end
+  end
+
+  config.vm.define "alma" do |alma|
+    alma.vm.box = "almalinux/9"
+    alma.vm.hostname = "alma"
+    alma.vm.network "public_network"
+    alma.vm.provider "virtualbox" do |vb|
+      vb.gui = false
+      vb.memory = "2048"
+    end
+  end
+
+end

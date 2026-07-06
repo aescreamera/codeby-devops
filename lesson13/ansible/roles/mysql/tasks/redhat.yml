@@ -1,0 +1,17 @@
+---
+- name: "MySQL - RedHat - Install EPEL"
+  ansible.builtin.package:
+    name: epel-release
+    state: present
+
+- name: "MySQL - RedHat - Install MariaDB"
+  ansible.builtin.dnf:
+    name:
+      - mariadb-server
+      - python3-mysqlclient
+    state: present
+    enablerepo: epel
+
+- name: "MySQL - RedHat - Service Name Fact"
+  ansible.builtin.set_fact:
+    db_service_name: "mariadb"
