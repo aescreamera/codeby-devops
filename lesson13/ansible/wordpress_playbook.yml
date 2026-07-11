@@ -1,0 +1,7 @@
+- name: Install Wordpress
+  hosts: wordpress
+  become: yes
+
+  roles:
+    - mysql
+    - apache

@@ -1,0 +1,12 @@
+---
+- name: "Apache - RedHat - install packages"
+  ansible.builtin.dnf:
+    name:
+      - httpd
+      - php
+      - php-mysqlnd
+    state: present
+
+- name: "Apache - RedHat - service name fact"
+  ansible.builtin.set_fact:
+    web_service_name: "httpd"

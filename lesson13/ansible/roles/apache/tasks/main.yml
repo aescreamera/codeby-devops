@@ -1,0 +1,14 @@
+---
+- name: "Apache - Debian install"
+  ansible.builtin.import_tasks: debian.yml
+  when: ansible_facts['os_family'] | lower == 'debian'
+
+- name: "Apache - RedHat install"
+  ansible.builtin.import_tasks: redhat.yml
+  when: ansible_facts['os_family'] | lower == 'redhat'
+
+- name: "Apache - is service active?"
+  ansible.builtin.systemd:
+    name: "{{ web_service_name }}"
+    state: started
+    enabled: yes

@@ -1,0 +1,13 @@
+---
+- name: "Apache - Debian - install packages"
+  ansible.builtin.apt:
+    name:
+      - apache2
+      - php
+      - php-mysql
+    state: present
+    update_cache: yes
+
+- name: "Apache - Debian - service name fact"
+  ansible.builtin.set_fact:
+    web_service_name: "apache2"

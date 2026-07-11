@@ -1,0 +1,7 @@
+[wordpress]
+ubuntu ansible_host=192.168.3.33 ansible_user=vagrant
+alma ansible_host=192.168.3.34 ansible_user=vagrant
+
+[wordpress:vars]
+ansible_user=vagrant
+ansible_private_key_path=~/.ssh/id_ecdsa
