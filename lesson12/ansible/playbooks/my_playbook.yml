@@ -1,0 +1,23 @@
+- name: My First Ansible Playbook, on budet ustanavlivat' vsyakoe
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: Install wget, htop, nginx
+      ansible.builtin.apt:
+        name:
+          - wget
+          - htop
+          - nginx
+        state: present
+        update_cache: yes
+
+    - name: Check nginx
+      ansible.builtin.systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Write environment
+      ansible.builtin.debug:
+        msg: "This host is in {{ env_name }} environment"
