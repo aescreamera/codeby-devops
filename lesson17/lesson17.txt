@@ -1,0 +1,39 @@
+Script started on 2026-07-14 18:20:03+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="238" LINES="51"]
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ docker network create \
+[?2004l[?2004h> --driver bridge \
+[?2004l[?2004h> wop[K[Kp-net
+[?2004l9817f4d1826f991413209f2a01fb7cc13f52a23eda6236f8855383a7d0afd8c8
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ docker volume create wp-db
+[?2004lwp-db
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ docker volume create wp-db[K[Kdata
+[?2004lwp-data
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ docker run -d \
+[?2004l[?2004h> -=-[K[K-name mysql \
+[?2004l[?2004h> --network wp-net \
+[?2004l[?2004h> -v wp-db:/var/lib/mytslq[K[K[K[Ksql \
+[?2004l[?2004h> -e MYSQL-[K_ROOT_PASSO[KWORD=student \
+[?2004l[?2004h> -e MYSQL_DATABASE=wordpress\ [K[K \
+[?2004l[?2004h> -e MYSQL_USER=wpuser \
+[?2004l[?2004h> -e MYSQL_PASSWORD [K=password \
+[?2004l[?2004h> mysql_8[K[K:8
+[?2004l126da5f2ced78a0aeb07ae8d40e2af3cd8cd27a72a322d2f74f9a9b0f203c864
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ docker u[Krun -d \
+[?2004l[?2004h> --name wordpress \
+[?2004l[?2004h> --network wp-net \
+[?2004l[?2004h> -p 8080:80 \
+[?2004l[?2004h> -v wp-data:/var-www[K[K[K[K/www/html \
+[?2004l[?2004h> -v /etrc/apa[K[K[K[K[K[Kc/apache2/sites-available/000-default.conf [K:/etc/apache2/sites-available/000-default.conf [K:ro [K \
+[?2004l[?2004h> -e WO[KORDPRESS_DB_HOST=mysql \
+[?2004l[?2004h> -e WORDPRESS [K_DB_USER =[K[K=wpuser \
+[?2004l[?2004h> -e OWRD[K[K[K[KWORDPRESS [K_DB_PASSWORD=password \
+[?2004l[?2004h> -e WORDPRESS_DB_NAME=wordpress \
+[?2004l[?2004h> wordpress
+[?2004le479a73c28981bbde4815ce39103d68a6a5e38edfe0e234f9e83387988c3a0fc
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED              STATUS              PORTS                                     NAMES
+e479a73c2898   wordpress   "docker-entrypoint.s…"   6 seconds ago        Up 5 seconds        0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   wordpress
+126da5f2ced7   mysql:8     "docker-entrypoint.s…"   About a minute ago   Up About a minute   3306/tcp, 33060/tcp                       mysql
+[?2004h]0;student@codeby-server: ~/lesson17[01;32mstudent@codeby-server[00m:[01;34m~/lesson17[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-14 18:23:29+03:00 [COMMAND_EXIT_CODE="0"]
