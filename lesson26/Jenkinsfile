@@ -1,0 +1,108 @@
+pipeline {
+    agent { label 'maven' }
+    stages {
+        stage('parallel build') {
+            parallel {
+                stage('Hello World') {
+                    when {
+                        expression {
+                            sh(
+                                script: "git diff --name-only HEAD~1 HEAD | grep '^lesson26/hello-world/'",
+                                returnStatus: true
+                            ) == 0
+                        }
+                    }
+                    stages {
+                        stage ('build') {
+                            steps {
+                                dir('lesson26/hello-world') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                        }
+                        stage('test') {
+                            steps {
+                                dir('lesson26/hello-world') {
+                                    sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('deploy') {
+                            steps {
+                                dir('lesson26/hello-world') {
+                                    sh 'java -jar target/*.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+                stage('Hello Jenkins') {
+                    when {
+                        expression {
+                            sh(
+                                script: "git diff --name-only HEAD~1 HEAD | grep '^lesson26/hello-jenkins/'",
+                                returnStatus: true
+                            ) == 0
+                        }
+                    }
+                    stages {
+                        stage ('build') {
+                            steps {
+                                dir('lesson26/hello-jenkins') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                        }
+                        stage('test') {
+                            steps {
+                                dir('lesson26/hello-jenkins') {
+                                    sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('deploy') {
+                            steps {
+                                dir('lesson26/hello-jenkins') {
+                                    sh 'java -jar target/*.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+                stage('Hello DevOps') {
+                    when {
+                        expression {
+                            sh(
+                                script: "git diff --name-only HEAD~1 HEAD | grep '^lesson26/hello-devops/'",
+                                returnStatus: true
+                            ) == 0
+                        }
+                    }
+                    stages {
+                        stage ('build') {
+                            steps {
+                                dir('lesson26/hello-devops') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                        }
+                        stage('test') {
+                            steps {
+                                dir('lesson26/hello-devops') {
+                                    sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('deploy') {
+                            steps {
+                                dir('lesson26/hello-devops') {
+                                    sh 'java -jar target/*.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
