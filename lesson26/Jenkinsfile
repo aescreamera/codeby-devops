@@ -1,0 +1,108 @@
+pipeline {
+    agent { label 'maven' }
+    stages {
+        stage('parallel build') {
+            parallel {
+                stage('Hello World') {
+                    when {
+                        expression {
+                            sh(
+                                script: "git diff --name-only HEAD~1 HEAD | grep '^hello-world/'",
+                                returnStatus: true
+                            ) == 0
+                        }
+                    }
+                    stages {
+                        stage ('build') {
+                            steps {
+                                dir('hello-world') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                        }
+                        stage('test') {
+                            steps {
+                                dir('hello-world') {
+                                    sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('deploy') {
+                            steps {
+                                dir('hello-world') {
+                                    sh 'java -jar target/*.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+                stage('Hello Jenkins') {
+                    when {
+                        expression {
+                            sh(
+                                script: "git diff --name-only HEAD~1 HEAD | grep '^hello-jenkins/'",
+                                returnStatus: true
+                            ) == 0
+                        }
+                    }
+                    stages {
+                        stage ('build') {
+                            steps {
+                                dir('hello-jenkins') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                        }
+                        stage('test') {
+                            steps {
+                                dir('hello-jenkins') {
+                                    sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('deploy') {
+                            steps {
+                                dir('hello-jenkins') {
+                                    sh 'java -jar target/*.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+                stage('Hello DevOps') {
+                    when {
+                        expression {
+                            sh(
+                                script: "git diff --name-only HEAD~1 HEAD | grep '^hello-devops/'",
+                                returnStatus: true
+                            ) == 0
+                        }
+                    }
+                    stages {
+                        stage ('build') {
+                            steps {
+                                dir('hello-devops') {
+                                    sh 'mvn clean package'
+                                }
+                            }
+                        }
+                        stage('test') {
+                            steps {
+                                dir('hello-devops') {
+                                    sh 'mvn test'
+                                }
+                            }
+                        }
+                        stage('deploy') {
+                            steps {
+                                dir('hello-devops') {
+                                    sh 'java -jar target/*.jar &'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
